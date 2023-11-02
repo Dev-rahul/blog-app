@@ -16,6 +16,9 @@ class CourseTableSeeder extends Seeder
         $c = new Course;
         $c->name = "Software Engineering, BSc (Hons)";
         $c->level = "UG";
+        $c->course_director="Dr. Mike Wood";
         $c->save();
+
+        Course::factory()->count(9)->create();
     }
 }

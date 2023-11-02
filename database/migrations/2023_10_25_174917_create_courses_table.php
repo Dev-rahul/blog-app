@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('level');
+            $table->string('course_director');
             $table->timestamps();
         });
     }
