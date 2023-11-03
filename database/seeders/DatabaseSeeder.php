@@ -20,6 +20,8 @@ class DatabaseSeeder extends Seeder
         // ]);
         $this->call(CourseTableSeeder::class);
         $this->call(UserTableSeeder::class);
+        $this->call(PrimaryGuardianTableSeeder::class);
+
 
     }
 }

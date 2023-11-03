@@ -13,6 +13,13 @@ return new class extends Migration
     {
         Schema::create('primary_guardians', function (Blueprint $table) {
             $table->id();
+            $table->string("name");
+            $table->string("contact_number");
+            $table->string("relationship");
+            $table->string("address");
+            $table->bigInteger('student_id')->unsigned();
+            $table->foreign('student_id')->references('id')->on('users')
+                ->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
         });
     }
