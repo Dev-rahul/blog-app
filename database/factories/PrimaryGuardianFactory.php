@@ -23,8 +23,8 @@ class PrimaryGuardianFactory extends Factory
             "relationship" => fake()->randomElement(['father', 'mother', 'uncle', 'aunt', 'grandfather', 'grandmother']),
             "address" => fake()->address(),
            // "student_id" => User::inRandomOrder()->first()->id, 
-            "student_id" => fake()->unique()->numberBetween(1, User::count()), 
-
+            //"student_id" => fake()->unique()->numberBetween(1, User::count()), 
+        
         ];
     }
 }

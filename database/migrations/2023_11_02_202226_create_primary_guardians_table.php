@@ -17,9 +17,6 @@ return new class extends Migration
             $table->string("contact_number");
             $table->string("relationship");
             $table->string("address");
-            $table->bigInteger('student_id')->unsigned();
-            $table->foreign('student_id')->references('id')->on('users')
-                ->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
         });
     }

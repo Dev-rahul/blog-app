@@ -4,10 +4,8 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\PrimaryGuardian;
 
-
-class PrimaryGuardianTableSeeder extends Seeder
+class BlogPostTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,7 +13,5 @@ class PrimaryGuardianTableSeeder extends Seeder
     public function run(): void
     {
         //
-      //  PrimaryGuardian::factory()->count(50)->create();
-
     }
 }

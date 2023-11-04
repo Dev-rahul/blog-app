@@ -43,11 +43,11 @@ class User extends Authenticatable
         'password' => 'hashed',
     ];
 
-    public function courses() {
-        return $this->hasMany(Course::class);
+    public function course() {
+        return $this->belongsTo(Course::class);
     }
 
-    public function primaryGuradian() {
+    public function primaryGuardian() {
         return $this->hasOne(PrimaryGuardian::class);
     }
 }
